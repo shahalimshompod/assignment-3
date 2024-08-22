@@ -12,6 +12,19 @@
      <!-- tailwind cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- tailwind customized class -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+
       <!-- google font cdn -->
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,6 +41,107 @@
 
 <!-- body started -->
 <body class="manrope">
-    <h1>Testing</h1>
+
+
+<!-- header section started -->
+    <header class="mx-2 md:container md:mx-auto">
+          <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden pl-0">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  <li>
+                    <a class="text-base text-[#494949] font-extrabold" href="#">Home</a>
+                </li>
+
+                <li>
+                  <a class="text-base text-[#737373]"  href="#">Services</a>
+                </li>
+
+                <li>
+                   <a class="text-base text-[#737373]"  href="#">Portfolio</a>
+                </li>
+
+                <li>
+                   <a class="text-base text-[#737373]"  href="#">Blogs</a>
+                </li>
+
+                <li>
+                   <a class="text-base text-[#737373]"  href="#">Contact Us</a>
+                </li>
+                </ul>
+              </div>
+
+              <span class="bg-[#ABEF5F] w-1/4 md:w-11 lg:w-12 h-1/3 md:h-9 lg:h-10 2xl:h-11 rounded-full mr-2 ">
+
+                <img class="w-1/4 md:w-4 lg:w-4 h-1/4 md:h-4 lg:h-4 m-2.5 md:m-2.5 lg:m-3 2xl:m-3.5" src="icons/up-right-arrow.png" alt="up-right-arrow">
+                
+              </span>
+
+            <h4 class="2xl:text-4xl font-extrabold text-[#212121] xl:text-3xl text-2xl justify-between w-full">Rinterio</h4>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li>
+                  <a class="text-base text-[#494949] font-extrabold" href="#">Home</a>
+              </li>
+
+              <li>
+                <a class="text-base text-[#737373]"  href="#">Services</a>
+              </li>
+
+              <li>
+                 <a class="text-base text-[#737373]"  href="#">Portfolio</a>
+              </li>
+
+              <li>
+                 <a class="text-base text-[#737373]"  href="#">Blogs</a>
+              </li>
+
+              <li>
+                 <a class="text-base text-[#737373]"  href="#">Contact Us</a>
+              </li>
+              </ul>
+            </div>
+
+            <div class="gap-8 navbar-end">
+
+              <img class="w-12 h-12 outline outline-2 outline-[#000]/10 rounded-full  lg:w-10 lg:h-10 hidden md:block" src="icons/find.png" alt="find">
+
+              <img class="w-12 h-12 outline outline-2 outline-[#000]/10 rounded-full lg:w-10 lg:h-10 hidden md:block" src="icons/add-to-cart.png" alt="add-to-cart">
+
+              <a class="btn bg-[#ABEF5F] rounded-full hover:bg-[#ABEF5F] text-[#1C1C1C] font-extrabold lg:text-lg text-base" href="#">Book Consult <span class="bg-[#1C1C1C] w-6 h-6 rounded-full">
+                <img class="w-2 h-2 m-2" src="icons/white-up-right-arrow.png" alt="white-up-right-arrow">
+            </span>
+              </a>
+
+              <img class="hidden" src="icons/menu.png" alt="menu">
+
+            </div>
+          </div>
+
+    </header>
+
+    <!-- main section started -->
+    <main></main>
+
+    <!-- footer section started -->
+    <footer></footer>
+
 </body>
 </html>
